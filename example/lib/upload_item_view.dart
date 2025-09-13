@@ -29,7 +29,7 @@ class UploadItemView extends StatelessWidget {
                 item.id,
                 style: Theme.of(context)
                     .textTheme
-                    .caption!
+                    .bodyMedium!
                     .copyWith(fontFamily: 'monospace'),
               ),
               Container(
@@ -59,7 +59,7 @@ class UploadItemView extends StatelessWidget {
                     item.response!.response!,
                     style: Theme.of(context)
                         .textTheme
-                        .caption!
+                        .bodyMedium!
                         .copyWith(fontFamily: 'monospace'),
                   ),
               ]
@@ -79,49 +79,49 @@ class UploadItemView extends StatelessWidget {
     );
   }
 
-  // Text _compareMd5(String localPath, String remoteHash) {
-  //   final File file = File(localPath);
-  //   if (!file.existsSync()) {
-  //     return Text(
-  //       'File ƒ',
-  //       style: TextStyle(color: Colors.grey),
-  //     );
-  //   }
+// Text _compareMd5(String localPath, String remoteHash) {
+//   final File file = File(localPath);
+//   if (!file.existsSync()) {
+//     return Text(
+//       'File ƒ',
+//       style: TextStyle(color: Colors.grey),
+//     );
+//   }
 
-  //   var digest = md5.convert(file.readAsBytesSync());
-  //   if (digest.toString().toLowerCase() == remoteHash) {
-  //     return Text(
-  //       'Hash $digest √',
-  //       style: TextStyle(color: Colors.green),
-  //     );
-  //   } else {
-  //     return Text(
-  //       'Hash $digest vs $remoteHash ƒ',
-  //       style: TextStyle(color: Colors.red),
-  //     );
-  //   }
-  // }
+//   var digest = md5.convert(file.readAsBytesSync());
+//   if (digest.toString().toLowerCase() == remoteHash) {
+//     return Text(
+//       'Hash $digest √',
+//       style: TextStyle(color: Colors.green),
+//     );
+//   } else {
+//     return Text(
+//       'Hash $digest vs $remoteHash ƒ',
+//       style: TextStyle(color: Colors.red),
+//     );
+//   }
+// }
 
-  // Text _compareSize(String localPath, int remoteSize) {
-  //   final File file = File(localPath);
-  //   if (!file.existsSync()) {
-  //     return Text(
-  //       'File ƒ',
-  //       style: TextStyle(color: Colors.grey),
-  //     );
-  //   }
+// Text _compareSize(String localPath, int remoteSize) {
+//   final File file = File(localPath);
+//   if (!file.existsSync()) {
+//     return Text(
+//       'File ƒ',
+//       style: TextStyle(color: Colors.grey),
+//     );
+//   }
 
-  //   final length = file.lengthSync();
-  //   if (length == remoteSize) {
-  //     return Text(
-  //       'Length $length √',
-  //       style: TextStyle(color: Colors.green),
-  //     );
-  //   } else {
-  //     return Text(
-  //       'Length $length vs $remoteSize ƒ',
-  //       style: TextStyle(color: Colors.red),
-  //     );
-  //   }
-  // }
+//   final length = file.lengthSync();
+//   if (length == remoteSize) {
+//     return Text(
+//       'Length $length √',
+//       style: TextStyle(color: Colors.green),
+//     );
+//   } else {
+//     return Text(
+//       'Length $length vs $remoteSize ƒ',
+//       style: TextStyle(color: Colors.red),
+//     );
+//   }
+// }
 }
